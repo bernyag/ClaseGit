@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
 <head >
+	<title>Notas HTML</title>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style> 
 	div {
 		color: brown;
@@ -17,10 +19,10 @@
 </head>
 <body>
 
-<h1>Notas HTML</h1>
+<h1 id="h1">Notas HTML</h1>
 <hr>
 <p><h3>Introducción:</h3>
-	Link a <a href="https://www.w3schools.com/html/default.asp"> https://www.w3schools.com/html/default.asp</a> en caso de dudas.
+	Link a <a href="https://www.w3schools.com/html/default.asp" title="Link a página principal de w3Schools"> https://www.w3schools.com/html/default.asp</a> en caso de dudas.
 </p>
 <br>
 <img src="HTML.jpg" width="100" height="120">
@@ -32,7 +34,7 @@
 	<hr>
 	<b>Element-</b> son 'tags' utilizados para mostrar contenido del HTML, se escriben entre < > y terminan con un /.
 		<div> 	
-						< p> = párrafo
+				<br>		< p> = párrafo
 				<br> 	< br> = break line
 				<br>	< pre> = formato predefinido (bueno para poemas)
 		</div>
@@ -79,8 +81,97 @@
 		<br>< cite>	título de una obra
 		<br>< q>	quote corta
 
+	<br><b>Links-</b>
+		<br>Bookmark- ponerle un id a una parte de la página, y hacerle un link. Ejemplo- bookmark a <a href=#h1>"Introducción"</a>
+		<br>Target attribute- define donde abrir el link
+		<br>< img> element (dentro de  < a>) para hacer un link en una imagen
+
+	<br><b>Images-</b>
+		<br>< img>	una imagen
+		<br>< map>  un mapa de imagen
+		<br>< area>	areas para dar click en mapa de imagen
+		<br>< picture>	contenedor de multiples imagenes
+
+		<table style="width:100%">
+			<caption>Tablas</caption>
+			<tr> 
+				<th> < table> </th>
+				<td> define una tabla</td>
+			</tr>
+			<tr> 
+				<th> < tr> </th>
+				<td> una fila de la tabla</td>
+			</tr>
+			<tr> 
+				<th> < td> </th>
+				<td> datos de una tabla</td>
+			</tr>
+			<tr> 
+				<th> < th> </th>
+				<td> heading de una tabla</td>
+			</tr>
+			<tr> 
+				<th> < caption> </th>
+				<td> titulo de una tabla</td>
+			</tr>
+		</table>
+		<br>
+
+		<b>Listas</b>
+		<dl>
+			<dt> Ordered list < ol>:</dt>
+				<dd>- lista enumeradoa </dd>
+			<dt> Unordered list < ul>: </dt>
+				<dd>- lista bullets</dd>
+			<dt> Description list < dl> </dt>
+		</dl>
+		<b>iframe</b>- una pagina dentro de otra
+		<br> 
+		<iframe src=https://www.w3schools.com/html/html_iframe.asp height=audto width =100%, alt="pagina web"></iframe>
+		<br><b>JavaScript-</b>
+				<br>< script>-	define un script de Java
+				<br>< noscript>	Contenido alterno si el cliente no tiene Java
+		<br><b>Head</b>
+		<br> < base>	Define como se van a abrir los links en la página
+		<br>< link>	Relaciona el documento con un archivo externo
+		<br>< meta>	Define la metadata del HTML
+
+		<br><b>ComputerCode</b>
+		<br> < code>	<code>Codigo de programación </code>
+		<br>< kbd>	<kbd>Input del teclado </kbd>
+		<br>< samp>	<samp> Output de computadora </samp>
+		<br>< var>	<var> Una variable </var>
+		<br>< pre>	<pre> Texto pre-formateado </pre>
+
+		<br><b>Entities</b>
+		<br>
+		<img src="Entities.jpg" alt="Tabla de entidades" width=500 height=auto> </img>
+
+		<br><b>Uniform Resource Locator (URL)</b>
+		<br>Formato:
+		<br> scheme://prefix.domain:port/path/filename
+		<br>	scheme - tipo de servicio de interner (comunmente http o https)
+		<br>	prefix - prefix del dominio (www)
+		<br>	domain - defines the Internet domain name (like w3schools.com)
+		<br>	path - el camino en el servidor
+		<br>	filename - el nombre del archivo
+<br>
+		<br><b>XHTML</b>- eXtensible HyperText Markup Language: es una versión más estricta de HTML, en  donde se deben respetar ciertas reglas
+		<br><b>Form</b>- es para hacer cuestionarios o recibir input del usuario.
+		<dl>
+			<dt>Tipos:</dt>
+				<dd>text- una línea de texto</dd>
+				<dd>radio- botón para opciones múltiples</dd>
+				<dd>submit- para subir la información</dd>
+				<dd>button- un botón</dd>
+		</dl>
+		<br> Sus atributos principales son:
+		<br>
+		<img src="Form.png" alt="atributos de form" width=500 height =auto></img>
+
 </p>
 
-
+<footer style="background: green" > Bernardo Altamirano
+<br> ITAM</footer>
 </body>
 </html>
