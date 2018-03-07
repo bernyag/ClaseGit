@@ -4,16 +4,13 @@
 	<title>Notas HTML</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
 <style> 
-	div {
-		color: brown;
-		display: inline;
-		display:inline-block; 
-        margin-left: 60px;
-		}
-	
-	
-	
+	.icon{
+	width:100px;
+	height:100px;
+	}
+
 </style>
 <title>Notas HTML</title>
 </head>
@@ -21,78 +18,81 @@
 
 <h1 id="h1">Notas HTML</h1>
 <hr>
-<p><h3>Introducción:</h3>
+<h2>Introducción:</h2>
 	Link a <a href="https://www.w3schools.com/html/default.asp" title="Link a página principal de w3Schools"> https://www.w3schools.com/html/default.asp</a> en caso de dudas.
-</p>
-<br>
-<img src="HTML.jpg" width="100" height="120">
 <br>
 <br>
-<p style="margin:0; display: inline;">
-	<b><font size="5">Terminos importantes:</font></b>
-	<br>
-	<hr>
-	<b>Element-</b> son 'tags' utilizados para mostrar contenido del HTML, se escriben entre < > y terminan con un /.
-		<div> 	
-				<br>		< p> = párrafo
-				<br> 	< br> = break line
-				<br>	< pre> = formato predefinido (bueno para poemas)
-		</div>
-	<br><b>Attribute-</b> es algo de un elemento que da más información de él. El formato suele ser: name="value"
-	<div>P.e- < img src="img_girl.jpg" width="500" height="600" > </div>
-	<br>
-		<div> 	title= tooltip
-			<br>	heigh = altura
-			<br> 	width= ancho
-			<br>	alt = texto si no sale imágen
-			<br>	href = link
-			<br>	style = cambiar tamano/ color/ tipo de letra
-		</div>
-	<br><b>Headings-</b>
-		<div> 	
-			< html> la raíz de un documento HTML
-			<br>< body>	cuerpo del documento
-			<br>< head>	contiene todos los elementos de cabeza (title, scripts, styles, etc.)
-			<br>< h1> a < h6> titulos de HTML
-			<br>< hr> línea para cambio de tema
-		</div>
+<img src="HTML.jpg" class="icon">
+<br>
+<br>
+<h3>Terminos importantes:</h3>
+<p>
+	<b> Element-</b> son 'tags' utilizados para mostrar contenido del HTML, se escriben entre < > y terminan con un /.
+		<ul> 	
+				<li>		< p> = párrafo</li>
+				<li> 	< br> = break line</li>
+				<li>	< pre> = formato predefinido (bueno para poemas)</li>
+		</ul>
+	<b> Attribute-</b> es algo de un elemento que da más información de él. El formato suele ser: name="value"
+		<ul> 	
+			<li>P.e- < img src="img_girl.jpg" width="500" height="600" ></li>
+			<li>title= tooltip</li>
+			<li>	heigh = altura</li>
+			<li> 	width= ancho</li>
+			<li>	alt = texto si no sale imágen</li>
+			<li>	href = link</li>
+			<li>	style = cambiar tamano/ color/ tipo de letra</li>
+		</ul>
+	<b> Headings-</b>
+		<ul> 	
+			<li>< html> la raíz de un documento HTML</li>
+			<li>< body>	cuerpo del documento</li>
+			<li>< head>	contiene todos los elementos de cabeza (title, scripts, styles, etc.)</li>
+			<li>< h1> a < h6> titulos de HTML</li>
+			<li>< hr> línea para cambio de tema</li>
+		</ul>
 
-	<br><b>Style-</b>
-		<br> text-align: POSICIÓN
-		<br> font-family: TIPO_DE_LETRA 
-		<br> font-size: TAM
-		<br> background: COL
-		<br>< b> - Bold text
-		<br>< strong> - Important text
-		<br>< i> - Italic text
-		<br>< em> - Emphasized text
-		<br>< mark> - Marked text
-		<br>< small> - Small text
-		<br>< del> - Deleted text
-		<br>< ins> - Inserted text
-		<br>< sub> - Subscript text
-		<br>< sup> - Superscript text
+	<b> Style-</b>
+	<ul>
+		<li> text-align: POSICIÓN</li>
+		<li> font-family: TIPO_DE_LETRA </li>
+		<li> font-size: TAM</li>
+		<li> background: COL</li>
+		<li>< b> - Bold text</li>
+		<li>< strong> - Important text</li>
+		<li>< i> - Italic text</li>
+		<li>< em> - Emphasized text</li>
+		<li>< mark> - Marked text</li>
+		<li>< small> - Small text</li>
+		<li>< del> - Deleted text</li>
+		<li>< ins> - Inserted text</li>
+		<li>< sub> - Subscript text</li>
+		<li>< sup> - Superscript text</li>
+	</ul>
 	
-	<br><b>Quotation-</b>
-		<br>< abbr>	abreviación
-		<br>< address>	información de contacto
-		<br>< bdo>	direccion de texto
-		<br>< blockquote>	quote de otra dirección
-		<br>< cite>	título de una obra
-		<br>< q>	quote corta
-
-	<br><b>Links-</b>
-		<br>Bookmark- ponerle un id a una parte de la página, y hacerle un link. Ejemplo- bookmark a <a href=#h1>"Introducción"</a>
-		<br>Target attribute- define donde abrir el link
-		<br>< img> element (dentro de  < a>) para hacer un link en una imagen
-
-	<br><b>Images-</b>
-		<br>< img>	una imagen
-		<br>< map>  un mapa de imagen
-		<br>< area>	areas para dar click en mapa de imagen
-		<br>< picture>	contenedor de multiples imagenes
-
-		<table style="width:100%">
+	<b>Quotation-</b>
+	<ul>
+		<li>< abbr>	abreviación</li>
+		<li>< address>	información de contacto</li>
+		<li>< bdo>	direccion de texto</li>
+		<li>< blockquote>	quote de otra dirección</li>
+		<li>< cite>	título de una obra</li>
+		<li>< q>	quote corta</li>
+	</ul>
+	<b>Links-</b>
+	<ul>
+		<li>Bookmark- ponerle un id a una parte de la página, y hacerle un link. Ejemplo- bookmark a <a href=#h1>"Introducción"</a></li>
+		<li>Target attribute- define donde abrir el link</li>
+		<li>< img> element (dentro de  < a>) para hacer un link en una imagen</li>
+	</ul>
+	<b>Images-</b>
+	<ul>
+		<li>< img>	una imagen</li>
+		<li>< map>  un mapa de imagen</li>
+		<li>< area>	areas para dar click en mapa de imagen</li>
+		<li>< picture>	contenedor de multiples imagenes</li>
+	</ul>
+		<table >
 			<caption>Tablas</caption>
 			<tr> 
 				<th> < table> </th>
@@ -118,58 +118,121 @@
 		<br>
 
 		<b>Listas</b>
-		<dl>
-			<dt> Ordered list < ol>:</dt>
-				<dd>- lista enumeradoa </dd>
-			<dt> Unordered list < ul>: </dt>
+		<ul>
+			<li> Ordered list < ol>:</li>
+				<dd>- lista enumerada </dd>
+			<li> Unordered list < ul>: </li>
 				<dd>- lista bullets</dd>
-			<dt> Description list < dl> </dt>
-		</dl>
+			<li> Description list < dl> </li>
+		</ul>
 		<b>iframe</b>- una pagina dentro de otra
-		<br> 
-		<iframe src=https://www.w3schools.com/html/html_iframe.asp height=audto width =100%, alt="pagina web"></iframe>
+		<br>
+		<!-- <iframe src=https://www.w3schools.com/html/html_iframe.asp height=audto width =100%, alt="pagina web"></iframe> -->
 		<br><b>JavaScript-</b>
-				<br>< script>-	define un script de Java
-				<br>< noscript>	Contenido alterno si el cliente no tiene Java
-		<br><b>Head</b>
-		<br> < base>	Define como se van a abrir los links en la página
-		<br>< link>	Relaciona el documento con un archivo externo
-		<br>< meta>	Define la metadata del HTML
-
-		<br><b>ComputerCode</b>
-		<br> < code>	<code>Codigo de programación </code>
-		<br>< kbd>	<kbd>Input del teclado </kbd>
-		<br>< samp>	<samp> Output de computadora </samp>
-		<br>< var>	<var> Una variable </var>
-		<br>< pre>	<pre> Texto pre-formateado </pre>
-
-		<br><b>Entities</b>
+		<ul>
+				<li>< script>-	define un script de Java</li>
+				<li>< noscript>	Contenido alterno si el cliente no tiene Java</li>
+		</ul>
+		<b>Head</b>
+		<ul>
+			<li> < base>	Define como se van a abrir los links en la página</li>
+			<li>< link>	Relaciona el documento con un archivo externo</li>
+			<li>< meta>	Define la metadata del HTML</li>
+		</ul>
+		<b>ComputerCode</b>
+		<ul>
+			<li> < code>	<code>Codigo de programación </code> </li>
+			<li>< kbd>	<kbd>Input del teclado </kbd></li>
+			<li>< samp>	<samp> Output de computadora </samp></li>
+			<li>< var>	<var> Una variable </var></li>
+			<li>< pre>	<pre> Texto pre-formateado </pre></li>
+		</ul>
+		<b>Entities</b>
+		<br>
 		<br>
 		<img src="Entities.jpg" alt="Tabla de entidades" width=500 height=auto> </img>
-
+		<br>
 		<br><b>Uniform Resource Locator (URL)</b>
+		<br>
 		<br>Formato:
-		<br> scheme://prefix.domain:port/path/filename
-		<br>	scheme - tipo de servicio de interner (comunmente http o https)
-		<br>	prefix - prefix del dominio (www)
-		<br>	domain - defines the Internet domain name (like w3schools.com)
-		<br>	path - el camino en el servidor
-		<br>	filename - el nombre del archivo
-<br>
-		<br><b>XHTML</b>- eXtensible HyperText Markup Language: es una versión más estricta de HTML, en  donde se deben respetar ciertas reglas
+		<ul>
+			<li> scheme://prefix.domain:port/path/filename</li>
+			<li>	scheme - tipo de servicio de interner (comunmente http o https)</li>
+			<li>	prefix - prefix del dominio (www)</li>
+			<li>	domain - defines the Internet domain name (like w3schools.com)</li>
+			<li>	path - el camino en el servidor</li>
+			<li>	filename - el nombre del archivo</li>
+		</ul>
+		<b>XHTML</b>- eXtensible HyperText Markup Language: es una versión más estricta de HTML, en  donde se deben respetar ciertas reglas
+		<br>
 		<br><b>Form</b>- es para hacer cuestionarios o recibir input del usuario.
-		<dl>
-			<dt>Tipos:</dt>
-				<dd>text- una línea de texto</dd>
-				<dd>radio- botón para opciones múltiples</dd>
-				<dd>submit- para subir la información</dd>
-				<dd>button- un botón</dd>
-		</dl>
-		<br> Sus atributos principales son:
+		<br>
+		<br>< input> types:
+		<ul>
+			<li> text- una línea de texto</li>
+			<li>radio- botón para opciones múltiples</li>
+			<li>submit- para subir la información</li>
+			<li>button- un botón</li>
+			<li>password</li>
+			<li>reset</li>
+			<li>checkbox</li>
+			<li>range</li>
+			<li>color</li>
+			<li>date</li>
+			<li>number</li>
+			<li>email</li>
+			<li>url</li>
+			</ul>
+		<b>Restricciones de input:</b>
+		<br><br>
+		<img src="Input Restrictions.png"  alt="Restricciones de input" width=500 height =auto></img>
+		<br>
+		<button type="button" onclick="alert('Usar onClick= alert(msg) para hacer una ventana')"> popUp </button>
+				
+		<br>
+		 Fieldset- agrupar la form en un área encerrada con titulo como "caption"
+		 <br>
+		 select:
+		 <select>
+		 	<option value="option"> < option></option>
+		 	<option value="option">  listar opciones</option>
+		 	<option value="option"> size =`x`</option>
+		 	<option value="option"> multiple</option>
+		 </select>
+		 <br>
+		 Textarea:
+		 <br>
+		 <textarea name="ej" rows="10" cols="10">< textarea> sirve para poner cuadros de texto como input. rows=x cols=y </textarea>
+ 		 <br>
+ 		 <input type="submit">
+ 		 <br>
+ 		
+		<br> <b>Sus atributos principales son:</b>
+		<br>
 		<br>
 		<img src="Form.png" alt="atributos de form" width=500 height =auto></img>
 
 </p>
+	<h1>Notas CSS </h1>
+	<hr>
+	<b>CSS Box model:</b> todo elemento en HTML se encuentra dentro de este modelo de caja:
+	<img src= "box.png" alt= "Imagen de caja"> </img>
+	<br>
+	<b>Border Styles:</b>
+	<br> <br>
+	<img src="Border.png" alt="Bordes" width= 500 height= auto></img>
+	<br><b>Margin:</b>
+	- establece el espacio afuera de un elemento (top, right, bottom, left)
+	<br>
+	<br><b>Padding:</b>
+	- establece un espacio en el borde dentro de un elemento (top, right, bottom, left)
+	<br>
+	<br>
+	<b>Text edits:</b>
+	<br>
+	<img src="text.png" alt= "modificaciones de texto"></img>
+	<br>
+
 
 <footer style="background: green" > Bernardo Altamirano
 <br> ITAM</footer>
