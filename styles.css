@@ -1,0 +1,58 @@
+body {
+    background-color: silver;
+}
+
+h1,h2,h3,b {
+	font-family: "Comic Sans MS";
+}
+h1{
+	color: orange;
+    text-align: center;
+    text-shadow: 3px 2px brown;
+
+}
+p{
+	margin:0; 
+	display: inline;
+}
+li,dd {
+		color: dimgray;
+		background-color: white;
+		width:95%;
+		padding-left: 5px;
+		
+		}
+dd{
+	width:86.4%;
+
+
+}
+ul{
+	margin-top: 12px;
+
+}		
+img{
+	align-items: center;
+}
+b{
+	color:brown;
+	border-left: 6px solid red;
+	border-radius: 3px;
+    background-color: lightgrey;
+    padding-left: 6px;
+    padding-right: 6px;
+    text-decoration: underline;
+}
+table, th,td{
+	border: 1px dotted black;
+}
+img{
+	width:75%;
+	padding-left: 5px;
+	height: auto;
+}
+.icon{
+	width:100px;
+	height:100px;
+
+}
