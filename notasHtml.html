@@ -5,6 +5,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <style> 
 	.icon{
 	width:100px;
@@ -19,7 +21,7 @@
 <h1 id="h1">Notas HTML</h1>
 <hr>
 <h2>Introducción:</h2>
-	Link a <a href="https://www.w3schools.com/html/default.asp" title="Link a página principal de w3Schools"> https://www.w3schools.com/html/default.asp</a> en caso de dudas.
+	Link a <a href="https://www.w3schools.com/html/default.asp" title="Link a página principal de w3Schools"> <span style="cursor: pointer;">https://www.w3schools.com/html/default.asp</span></a> en caso de dudas.
 <br>
 <br>
 <img src="HTML.jpg" class="icon">
@@ -92,31 +94,6 @@
 		<li>< area>	areas para dar click en mapa de imagen</li>
 		<li>< picture>	contenedor de multiples imagenes</li>
 	</ul>
-		<table >
-			<caption>Tablas</caption>
-			<tr> 
-				<th> < table> </th>
-				<td> define una tabla</td>
-			</tr>
-			<tr> 
-				<th> < tr> </th>
-				<td> una fila de la tabla</td>
-			</tr>
-			<tr> 
-				<th> < td> </th>
-				<td> datos de una tabla</td>
-			</tr>
-			<tr> 
-				<th> < th> </th>
-				<td> heading de una tabla</td>
-			</tr>
-			<tr> 
-				<th> < caption> </th>
-				<td> titulo de una tabla</td>
-			</tr>
-		</table>
-		<br>
-
 		<b>Listas</b>
 		<ul>
 			<li> Ordered list < ol>:</li>
@@ -232,6 +209,75 @@
 	<br>
 	<img src="text.png" alt= "modificaciones de texto"></img>
 	<br>
+	<br>
+	<b>Icons- </b> para poner íconos, agregar uno de los siguientes links al head: <br>
+	<ul>
+		<li>&lt link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" &gt</li>
+		<li>&lt link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" &gt</li>
+		<li><i class="fa fa-car"></i></li>
+		<li><i class= "material-icons"> cloud</i></li>
+	</ul>
+	<b>Links.2- </b> los links se pueden configurar para los siguientes estados:
+	<ul>
+		<li> a:link- como se comporta el link a plena vista</li>
+		<li>	a:hover- como se comporta cuando pasa el cursor sobre él</li>
+		<li>	a:visited- como se ve ya que ha sido usado</li>
+		<li>	a:active- en el momento que se presiona</li>
+	</ul>
+	<b>Span- </b>
+	<p>Se puede cambiar la visualización del mouse sobre un elemento utilizando "span "</p>
+		<ul>
+			<li><span style="cursor:auto">auto</span></li>
+			<li><span style="cursor:crosshair">crosshair</span></li>
+			<li><span style="cursor:default">default</span></li>
+			<li><span style="cursor:e-resize">e-resize</span></li>
+			<li><span style="cursor:help">help</span></li>
+			<li><span style="cursor:move">move</span></li>
+			<li><span style="cursor:n-resize">n-resize</span></li>
+			<li><span style="cursor:ne-resize">ne-resize</span></li>
+			<li><span style="cursor:nw-resize">nw-resize</span></li>
+			<li><span style="cursor:pointer">pointer</span></li>
+			<li><span style="cursor:progress">progress</span></li>
+			<li><span style="cursor:s-resize">s-resize</span></li>
+			<li><span style="cursor:se-resize">se-resize</span></li>
+			<li><span style="cursor:sw-resize">sw-resize</span></li>
+			<li><span style="cursor:text">text</span></li>
+			<li><span style="cursor:w-resize">w-resize</span></li>
+			<li><span style="cursor:wait">wait</span></li>
+		</ul>
+		<b>Tablas:</b>
+		<table >
+			<caption>Ejemplo</caption>
+			<tr> 
+				<th> < table> </th>
+				<td> define una tabla</td>
+			</tr>
+			<tr> 
+				<th> < tr> </th>
+				<td> una fila de la tabla</td>
+			</tr>
+			<tr> 
+				<th> < td> </th>
+				<td> datos de una tabla</td>
+			</tr>
+			<tr> 
+				<th> < th> </th>
+				<td> heading de una tabla</td>
+			</tr>
+			<tr> 
+				<th> < caption> </th>
+				<td> titulo de una tabla</td>
+			</tr>
+			<tr>
+				<th> nth-child(even/odd)</th>
+				<td> sirve para dividir las filas en colores</td>
+			</tr>
+		</table>
+	<br>
+	
+
+	
+	
 
 
 <footer style="background: green" > Bernardo Altamirano
