@@ -20,7 +20,6 @@ li,dd {
 		background-color: white;
 		width:95%;
 		padding-left: 5px;
-		
 		}
 dd{
 	width:86.4%;
@@ -29,7 +28,9 @@ dd{
 }
 ul{
 	margin-top: 12px;
-
+	list-style-position: inside;
+	background-color:#ff9999;
+	padding: 10px;
 }		
 img{
 	align-items: center;
@@ -46,13 +47,49 @@ b{
 table, th,td{
 	border: 1px dotted black;
 }
+tr:nth-child(odd){
+	background-color: aliceblue;
+}
+tr:nth-child(even){
+	background-color: cornsilk;
+}
+tr:hover{
+	background-color: gold;
+}
+caption{
+	font-size: 25px;
+	text-align: center;
+}
 img{
 	width:75%;
 	padding-left: 5px;
 	height: auto;
 }
-.icon{
-	width:100px;
-	height:100px;
-
+a:link{
+	color:white;
+	background-color: black;
+	text-align: center;
+	padding: 2px;
+	display: inline-block;
+}
+a:hover{
+	color:black;
+	background-color: brown;
+	text-align: center;
+	padding: 2px;
+	display: inline-block;
+}
+a:visited{
+	color:black	;
+	background-color: orange ;
+	text-align: center;
+	padding: 2px;
+	display: inline-block;
+}
+a:active{
+	color:black;
+	background-color: green;
+	text-align: center;
+	padding: 2px;
+	display: inline-block;
 }
