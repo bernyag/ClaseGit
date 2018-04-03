@@ -8,24 +8,23 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <style> 
-	.icon{
-	width:100px;
-	height:100px;
-	}
-
 </style>
 </head>
 <body>
+<div class="navbar">
+  <a href="#intro">HTML</a>
+  <a href="#css">CSS</a>
+  <a href="#contact">Contact</a>
+  <img src="HTML.jpg" class="icon2" align="right">
+</div>
+<br>
+<br>
+<h1 id="html">Notas HTML</h1>
 
-<h1 class="navbar">Notass HTML</h1>
-<hr>
-<h2>Introducción:</h2>
-	Link a <a href="https://www.w3schools.com/html/default.asp" title="Link a página principal de w3Schools"> <span style="cursor: pointer;">https://www.w3schools.com/html/default.asp</span></a> en caso de dudas.
-<br>
-<br>
+<h2 id="intro">Introducción:</h2>
+Link a <a href="https://www.w3schools.com/html/default.asp" title="Link a página principal de w3Schools" target="_blank"> https://www.w3schools.com/html/default.asp</a> en caso de dudas.
+<br><br>
 <img src="HTML.jpg" class="icon">
-<br>
-<br>
 <h3>Terminos importantes:</h3>
 <p>
 	<b> Element-</b> son 'tags' utilizados para mostrar contenido del HTML, se escriben entre < > y terminan con un /.
@@ -83,7 +82,7 @@
 	<b>Links-</b>
 	<ul>
 		<li>Bookmark- ponerle un id a una parte de la página, y hacerle un link. Ejemplo- bookmark a <a href=#h1>"Introducción"</a></li>
-		<li>Target attribute- define donde abrir el link</li>
+		<li>Target attribute- define donde abrir el link (_blank es en otra tab)</li>
 		<li>< img> element (dentro de  < a>) para hacer un link en una imagen</li>
 	</ul>
 	<b>Images-</b>
@@ -189,7 +188,7 @@
 		<img src="Form.png" alt="atributos de form" width=500 height =auto></img>
 
 </p>
-	<h1>Notas CSS </h1>
+	<h1 id = "css">Notas CSS </h1>
 	<hr>
 	<b>CSS Box model:</b> todo elemento en HTML se encuentra dentro de este modelo de caja:
 	<img src= "box.png" alt= "Imagen de caja"> </img>
@@ -278,14 +277,80 @@
 		<li>display: none</li>
 		<li>visibility: hidden</li>
 	</ul>
+	<br><b>Max-height, max-width-</b> se utiliza para que un elemento no rebace tal tamaño, se ajusta a que cambien de tamaño la ventana. 
+	<br><br><b>Overflow-</b> se encarga de los casos en donde el texto no cabe dentro del tamaño de un elemento.
+	<ul>
+		<li>visible- ignora el tamaño y se sale del elemento</li>
+		<li>hidden- lo corta en donde el tamaño lo permite </li>
+		<li>scroll- agrega scrollbars para no perder el texto</li>
+		<li>auto- scroll solo si es necesario</li>
+		<li>Hay overflow-x y overflow-y, dependiendo de que eje quieres considerar</li>
+	</ul>
+	<br>
+	<b>Clear / float- </b> sirve para organizar imagenes o elementos para que 'floten' juntos
+	<br>
+	<div class="clearfix">
+		<div class= "img-container">
+			<img src="im1.jpg" width="100%">
+		</div>
+		<div class= "img-container">
+			<img src="im2.jpg" width="100%">
+		</div>
+		<div class= "img-container">
+			<img src="im3.jpg" width="100%">
+		</div>
+	</div>
+	<ul>
+		<li>Al terminar debes de poner lo siguiente para regresar al formato normal:
+			<code><br>.clearfix::after {
+    		<br>content: "";
+    		<br>clear: both;
+    		<br>display: table;</code>
+		}</li>
+	</ul>
+	<br><b>Combinators-</b> sirve para seleccionar algunos elementos en específico.
+	<ul>
+		<li>descendant selector (space)- se refiere a los que están dentro del otro elemento</li>
+		<li>child selector (>)- se refiere a los que van justo un nivel adentro de otro elemento, "hijos"</li>
+		<li>adjacent sibling selector (+)- van justo despues de otro elemento</li>
+		<li>general sibling selector (~)- todos los hermanos del otro elemento </li>
+	</ul>
+	<br><b>Pseudo-classes- </b>sirven para darle formato especial a diferentes estados de un elemento (links por ejemplo)
+	<ul>
+		<li><strong>Formato:</strong> <code><br>selector:pseudo-class {<br>
+    	property:value;<br>
+			}</code></li>
+		<li>First-child- puedes ustar esta pseudoclase para seleccionar solo la primera instancia de un elemento</li>
+	</ul>
+	<br><b>Pseudo-elements- </b>similares a la pseudoclase, pero este sirve para darle formato a ciertas partes de un elemento (por ejemplo la primer línea o letra)
+	<ul>	
+		<li>::after</li>
+		<li>::before</li>
+		<li>::first-letter</li>
+		<li>::first-line</li>
+		<li>::selection</li>
+	</ul>
+	<br><b>Navigation bar- </b> hecha a base de links
+	<ul>
+		<li>Vertical- se hace con una lista quitandole sus puntos</li>
+		<li>Horizontal- se hace con un div o con una lista con elementos 'inline'</li>
+		<li>Para hacerla que se quede todo el tiempo, le pones position:fixed, y le determinas un tamaño</li>
+	</ul>
+	<br><b>Attribute selector-</b> sirve para seleccionar solo elementos que contienen algun atributo
+	<ul>
+		<li>se escribe como: elemento[atributte] {}</li>
+		<li>puedes checar que el atributo tenga tal valor, usando [attribute= "value"]</li>
+	</ul>
+	
+
 
 	
 
 	
 	
 
-
-<footer style="background: green" > Bernardo Altamirano
+<br><br><br>
+<footer> Bernardo Altamirano
 <br> ITAM</footer>
 </body>
 </html>
