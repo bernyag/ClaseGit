@@ -1,0 +1,77 @@
+body{
+	background-color: black;
+}
+.a1{
+	height: 50%;
+	width: 100%;
+	padding: 10px;
+}
+.a2{
+	height: 50%;
+	width: 100%;
+	padding: 10px;
+}
+.d1{
+	height: 24vw;
+	width: 24vw;
+	background-color: red;
+	position: fixed;
+	top: 5%;
+	left: 2%;
+}
+.d2{
+	height: 20vw;
+	width: 20vw;
+	background-color: red;
+	position: fixed;
+	top: 10%;
+	left: 30%;
+}
+.d3{
+	height: 10vw;
+	width: 10vw;
+	background-color: red;
+	position: fixed;
+	top: 20%;
+	left: 52%;
+}
+.d4{ 
+	height: 7vw;
+	width: 7vw;
+	background-color: red;
+	position: fixed;
+	top: 23%;
+	left: 65%;
+}
+.d5{
+	height: 7vw;
+	width: 7vw;	
+	background-color: red;
+	position: fixed;
+	bottom: 23%;
+	left: 2%;
+}
+.d6{
+	height: 10vw;
+	width: 10vw;
+	background-color: red;
+	position: fixed;
+	bottom: 20%;
+	left: 15%;
+}
+.d7{
+	height: 20vw;
+	width: 20vw;
+	background-color: red;
+	position: fixed;
+	bottom: 10%;
+	left: 27%;
+}
+.d8{
+	height: 24vw;
+	width: 24vw;
+	background-color: red;
+	position: fixed;
+	bottom: 5%;
+	left:55%;
+}

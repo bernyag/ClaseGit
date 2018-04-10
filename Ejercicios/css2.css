@@ -1,0 +1,17 @@
+.d1{
+	height: 50%;
+	width: 100%;
+	background-color: red;
+	position: fixed;
+	top: 0;
+	left: 0;
+
+}
+.d2{
+	height: 50%;
+	width: 100%;
+	left: 0;
+	background-color: black;
+	position: fixed;
+	bottom: 0;
+}

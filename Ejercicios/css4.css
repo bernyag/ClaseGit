@@ -1,0 +1,40 @@
+.d1{
+	height: 25%;
+	width: 20%;
+	background-color: rgb(0,0,299);
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+.d2{
+	height: 25%;
+	width: 20%;
+	background-color: rgb(0,0,235);
+	position: fixed;
+	top: 100px;
+	left: 235px;
+}
+.d3{
+	height: 25%;
+	width: 20%;
+	background-color: rgb(0,0,200);
+	position: fixed;
+	top: 200px;
+	left: 470px;
+}
+.d4{
+	height: 25%;
+	width: 20%;
+	background-color: rgb(0,0,180);
+	position: fixed;
+	top: 300px;
+	left: 705px;
+}
+.d5{
+	height: 25%;
+	width: 20%;
+	background-color: rgb(0,0,160);
+	position: fixed;
+	top: 400px;
+	left: 940px;
+}

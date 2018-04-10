@@ -1,0 +1,21 @@
+p{
+	background-color: green;
+}
+body{
+	background-color: gray;
+}
+.d1{
+	padding: 30px;
+	width:500px;
+	border:30px solid red;
+	margin: 30px ;
+	background-color: purple;
+
+}
+.d2{
+	padding: 30px;
+	width:300px;
+	border:30px solid blue;
+	margin: 30px ;
+	background-color: white;
+}
