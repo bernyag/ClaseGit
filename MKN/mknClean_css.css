@@ -4,10 +4,18 @@ html{
 body{
 	font-family: Verdana;
 }
+video{
+	width: 30%;
+	height:40%;
+}
+
+
+
+
 .b-logo{max-width: 10%; height: auto; left: 15px;float: left;}
 .b-center{display:inline-block;width:100%;text-align: center; }
-.b-top{position: fixed; top: 0; width: 100%;}
-.b-bar{width:100%;overflow:hidden; display:inline-block;width:auto;}
+.b-top{position: fixed; top: 0; width: 100%; z-index: 10000;}
+.b-bar{width:100%;overflow:hidden; display:inline-block;width:auto; z-index: 100000000;}
 .b-bar-item{padding:8px 16px;float:left;width:auto;border:none;display:block;outline:0}
 .b-padding{padding: 10px;}
 .b-padding-32{padding: 32px;}
