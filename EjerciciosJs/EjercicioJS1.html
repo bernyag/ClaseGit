@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Ejercicio JavaScript 1</title>
+	<link rel="stylesheet" href="styleJs1.css">
+	<script>
+		function piramide(){
+			x= document.getElementsByClassName("pir");
+			var y=document.getElementById("tb").value;
+			x[0].innerText="";
+			for (var i = 1; i <= y; i++) {
+
+				for (var j = 0; j < i; j++) {
+					x[0].innerText+="o";
+				}
+				x[0].innerText+="\n";
+			}
+		}
+	</script>
+</head>
+<body>
+	<div class="head">
+		Ejercicio 1 de JavaScript
+	</div>
+	<br>
+	Ingresa un número para construir la base:
+	<br><br>
+	<input type="text" name="textbox" id="tb">
+	<br>
+	<button class="btAceptar" onclick="piramide()">Aceptar</button>
+	<br><div class="pir">
+		
+	</div>
+	
+</body>
+</html>

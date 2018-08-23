@@ -1,0 +1,28 @@
+.head{
+	background-color: gray;
+	top: 0;
+	width: 100%;
+	text-align: center;
+	font-size: 100px;
+	color: white;
+}
+body{
+	font-family: "Arial";
+	font-size: 25px;
+}
+button{
+	font-size: 18px;
+	width: 100px;
+	height: 60px;
+}
+
+.ima{
+	width: 250px;
+	height: 300px;
+	alt: "pickle";
+}
+.divo{
+	text-align: center;
+	max-width: 25%;
+	float: left;
+}

@@ -1,0 +1,27 @@
+.head{
+	background-color: gray;
+	top: 0;
+	width: 100%;
+	text-align: center;
+	font-size: 100px;
+	color: white;
+}
+body{
+	font-family: "Arial";
+	font-size: 25px;
+}
+#tb{
+	width: 73px;
+	height: 30px;
+}
+.btAceptar{
+	background-color: black;
+	color: white;
+	font-size: 18px;
+}
+.pir{
+	top: 20%;
+	left: 50%;
+	color: green;
+	text-align: center;
+}

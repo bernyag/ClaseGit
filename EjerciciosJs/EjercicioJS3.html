@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Ejercicio JavaScript 3</title>
+	<link rel="stylesheet" href="styleJs3.css">
+	<script>
+		function generar(){
+			//var myimages=new Array()
+			//myimages[id]=div;
+			id= (Math.floor(Math.random() *1000));
+			area= document.getElementById("add");
+			var div= document.createElement("div");
+			var img= document.createElement("img");
+			var tx = document.createElement("p");
+			var t= document.createTextNode("\t"+id);
+
+			var btn = document.createElement("BUTTON");
+		    var bt = document.createTextNode("Borrar");
+		    btn.appendChild(bt);
+		    btn.setAttribute("onclick","borrar(this.parentElement)");
+
+			img.setAttribute("src","pickle.jpg");
+			img.classList.toggle("ima");
+			div.classList.toggle("divo");
+    		tx.appendChild(t);
+    		div.appendChild(img);
+    		div.appendChild(tx);
+    		div.appendChild(btn);
+    		area.appendChild(div);
+
+		}
+		function borrar(padre){
+			padre.parentElement.removeChild(padre)
+			//this.parentNode.removeChild(this);
+
+		}
+	</script>
+</head>
+<body>
+	<div class="head">Ejercicio JavaScript 3 </div>
+	<br>
+	Da click para generar un ID
+	<br><br>
+	<button class="bt" onclick="generar()">Generar</button>
+	<div id= "add">
+		
+	</div>
+	
+</body>
+</html>
