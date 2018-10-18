@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Ejercicio JavaScript 3</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script>
+		var arr = [];
+		var prueba={nom : "nombre", niv: "nivel"};
+
+		function aceptar(){
+			area= document.getElementById("add");
+			var div= document.createElement("div");
+			var head = document.createElement("h4");
+			var sel = document.createElement("select");
+			var op1 = document.createElement("option");
+			var op2 = document.createElement("option");
+			var op3 = document.createElement("option");
+			var br = document.createElement("br");
+			var br2 = document.createElement("br");
+		    var txHead = document.createTextNode(document.getElementById("ddl").value);
+		    var bajo = document.createTextNode("Bajo");
+		    var int = document.createTextNode("Intermedio");
+		    var avan = document.createTextNode("Avanzado");
+		    head.appendChild(txHead);
+		    op1.value="bajo";
+		    op1.text ="bajo";
+		    op2.value="intermedio";
+		    op2.text ="intermedio";
+		    op3.value="alto";
+		    op3.text ="alto";
+
+			var btn = document.createElement("BUTTON");
+		    var bt = document.createTextNode("X");
+		    btn.appendChild(bt);
+		    btn.setAttribute("onclick","borrar(this.parentElement)");
+
+    		sel.appendChild(op1);
+    		sel.appendChild(op2);
+    		sel.appendChild(op3);
+    		//sel.setAttribute("onchange","array( this.parentElement.getElementsByTagName('h4')[0].textContent ,this.value)");
+    		div.appendChild(head);
+    		div.appendChild(sel);
+    		div.appendChild(br);
+    		div.appendChild(btn);
+    		div.classList.toggle("divo");
+			area.appendChild(div);
+			//array(txHead.wholeText,'Bajo');
+
+		}
+		function borrar(padre){
+			padre.parentElement.removeChild(padre)
+		}
+		function refresh(){
+			var arr = [];
+
+			var repor=document.getElementById("rep");
+			repor.innerText="";
+			var asc=document.getElementById("add");
+			desc = asc.getElementsByTagName('div');
+			for (var i = 0; i < desc.length; i++) {
+				var reg ={nom: desc[i].getElementsByTagName('h4')[0].textContent, niv: desc[i].getElementsByTagName('select')[0].value};
+				arr.push(reg);
+			}
+			for (var i = 0; i < arr.length; i++) {
+				repor.innerText+="Idioma: "+arr[i].nom+"    , Nivel: "+arr[i].niv+ "\n";
+			}
+		}
+	</script>
+</head>
+<body>
+	<div class="head"><h1>Ejercicio JavaScript 3 </h1></div>
+	<br>
+	<div class= "home">
+	Selecciona un idioma:
+	<br><br>
+	<form action="/action_page.php">
+	  <select name="idiomas" id="ddl" onchange="aceptar()">
+	    <option value="Espanol">Español</option>
+	    <option value="Ingles">Inglés</option>
+	    <option value="Italiano">Italiano</option>
+	    <option value="Frances">Francés</option>
+	    <option value="Chino">Chino</option>
+	    <option value="Portugues">Portugués</option>
+	  </select>
+	</form>
+	<button class="bt" onclick="refresh()">Aceptar</button>
+	</div>
+
+	<div id="add">
+		
+	</div>
+	<div id= "rep">
+		
+	</div>
+	
+</body>
+</html>

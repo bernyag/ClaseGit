@@ -4,7 +4,7 @@
 	<title>Ejercicio JavaScript 3</title>
 	<link rel="stylesheet" href="styleJs3.css">
 	<script>
-		function generar(){
+		function aceptar(){
 			//var myimages=new Array()
 			//myimages[id]=div;
 			id= (Math.floor(Math.random() *1000));
@@ -39,11 +39,20 @@
 <body>
 	<div class="head">Ejercicio JavaScript 3 </div>
 	<br>
-	Da click para generar un ID
+	<div class= "home">
+	Selecciona un idioma
 	<br><br>
-	<button class="bt" onclick="generar()">Generar</button>
-	<div id= "add">
-		
+	<form action="/action_page.php">
+	  <select name="idiomas">
+	    <option value="esp">Español</option>
+	    <option value="eng">Inglés</option>
+	    <option value="ita">Italiano</option>
+	    <option value="fra">Francés</option>
+	    <option value="ch">Chino</option>
+	    <option value="port">Portugués</option>
+	  </select>
+	</form>
+	<button class="bt" onclick="aceptar()">Aceptar</button>
 	</div>
 	
 </body>

@@ -1,0 +1,15 @@
+{
+  "name": "ejercicio3",
+  "version": "1.0.0",
+  "description": "Ejercicio 3 JS",
+  "main": "index.js",
+  "scripts": {
+    "transpilar": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "BAG",
+  "license": "ISC",
+  "dependencies": {
+    "live-server": "^1.2.0",
+    "node-sass": "^4.9.3"
+  }
+}
