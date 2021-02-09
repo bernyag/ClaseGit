@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="es">
+<head >
+	<title>Notas HTML</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<style> 
+</style>
+</head>
+<body>
+<div class="navbar">
+  <a href="#intro">HTML</a>
+  <a href="#css">CSS</a>
+  <a href="#contact">Contact</a>
+  <img src="HTML.jpg" class="icon2" align="right">
+</div>
+<br>
+<br>
+<h1 id="html">Notas HTML</h1>
+
+<h2 id="intro">Introducción:</h2>
+Link a <a href="https://www.w3schools.com/html/default.asp" title="Link a página principal de w3Schools" target="_blank"> https://www.w3schools.com/html/default.asp</a> en caso de dudas.
+<br><br>
+<img src="HTML.jpg" class="icon">
+<h3>Terminos importantes:</h3>
+<p>
+	<b> Element-</b> son 'tags' utilizados para mostrar contenido del HTML, se escriben entre < > y terminan con un /.
+		<ul> 	
+				<li>		< p> = párrafo</li>
+				<li> 	< br> = break line</li>
+				<li>	< pre> = formato predefinido (bueno para poemas)</li>
+		</ul>
+	<b> Attribute-</b> es algo de un elemento que da más información de él. El formato suele ser: name="value"
+		<ul> 	
+			<li>P.e- < img src="img_girl.jpg" width="500" height="600" ></li>
+			<li>title= tooltip</li>
+			<li>	heigh = altura</li>
+			<li> 	width= ancho</li>
+			<li>	alt = texto si no sale imágen</li>
+			<li>	href = link</li>
+			<li>	style = cambiar tamano/ color/ tipo de letra</li>
+		</ul>
+	<b> Headings-</b>
+		<ul> 	
+			<li>< html> la raíz de un documento HTML</li>
+			<li>< body>	cuerpo del documento</li>
+			<li>< head>	contiene todos los elementos de cabeza (title, scripts, styles, etc.)</li>
+			<li>< h1> a < h6> titulos de HTML</li>
+			<li>< hr> línea para cambio de tema</li>
+		</ul>
+
+	<b> Style-</b>
+	<ul>
+		<li> text-align: POSICIÓN</li>
+		<li> font-family: TIPO_DE_LETRA </li>
+		<li> font-size: TAM</li>
+		<li> background: COL</li>
+		<li>< b> - Bold text</li>
+		<li>< strong> - Important text</li>
+		<li>< i> - Italic text</li>
+		<li>< em> - Emphasized text</li>
+		<li>< mark> - Marked text</li>
+		<li>< small> - Small text</li>
+		<li>< del> - Deleted text</li>
+		<li>< ins> - Inserted text</li>
+		<li>< sub> - Subscript text</li>
+		<li>< sup> - Superscript text</li>
+	</ul>
+	
+	<b>Quotation-</b>
+	<ul>
+		<li>< abbr>	abreviación</li>
+		<li>< address>	información de contacto</li>
+		<li>< bdo>	direccion de texto</li>
+		<li>< blockquote>	quote de otra dirección</li>
+		<li>< cite>	título de una obra</li>
+		<li>< q>	quote corta</li>
+	</ul>
+	<b>Links-</b>
+	<ul>
+		<li>Bookmark- ponerle un id a una parte de la página, y hacerle un link. Ejemplo- bookmark a <a href=#h1>"Introducción"</a></li>
+		<li>Target attribute- define donde abrir el link (_blank es en otra tab)</li>
+		<li>< img> element (dentro de  < a>) para hacer un link en una imagen</li>
+	</ul>
+	<b>Images-</b>
+	<ul>
+		<li>< img>	una imagen</li>
+		<li>< map>  un mapa de imagen</li>
+		<li>< area>	areas para dar click en mapa de imagen</li>
+		<li>< picture>	contenedor de multiples imagenes</li>
+	</ul>
+		<b>Listas</b>
+		<ul>
+			<li> Ordered list < ol>:</li>
+				<dd>- lista enumerada </dd>
+			<li> Unordered list < ul>: </li>
+				<dd>- lista bullets</dd>
+			<li> Description list < dl> </li>
+		</ul>
+		<b>iframe</b>- una pagina dentro de otra
+		<br>
+		<!-- <iframe src=https://www.w3schools.com/html/html_iframe.asp height=audto width =100%, alt="pagina web"></iframe> -->
+		<br><b>JavaScript-</b>
+		<ul>
+				<li>< script>-	define un script de Java</li>
+				<li>< noscript>	Contenido alterno si el cliente no tiene Java</li>
+		</ul>
+		<b>Head</b>
+		<ul>
+			<li> < base>	Define como se van a abrir los links en la página</li>
+			<li>< link>	Relaciona el documento con un archivo externo</li>
+			<li>< meta>	Define la metadata del HTML</li>
+		</ul>
+		<b>ComputerCode</b>
+		<ul>
+			<li> < code>	<code>Codigo de programación </code> </li>
+			<li>< kbd>	<kbd>Input del teclado </kbd></li>
+			<li>< samp>	<samp> Output de computadora </samp></li>
+			<li>< var>	<var> Una variable </var></li>
+			<li>< pre>	<pre> Texto pre-formateado </pre></li>
+		</ul>
+		<b>Entities</b>
+		<br>
+		<br>
+		<img src="Entities.jpg" alt="Tabla de entidades" width=500 height=auto> </img>
+		<br>
+		<br><b>Uniform Resource Locator (URL)</b>
+		<br>
+		<br>Formato:
+		<ul>
+			<li> scheme://prefix.domain:port/path/filename</li>
+			<li>	scheme - tipo de servicio de interner (comunmente http o https)</li>
+			<li>	prefix - prefix del dominio (www)</li>
+			<li>	domain - defines the Internet domain name (like w3schools.com)</li>
+			<li>	path - el camino en el servidor</li>
+			<li>	filename - el nombre del archivo</li>
+		</ul>
+		<b>XHTML</b>- eXtensible HyperText Markup Language: es una versión más estricta de HTML, en  donde se deben respetar ciertas reglas
+		<br>
+		<br><b>Form</b>- es para hacer cuestionarios o recibir input del usuario.
+		<br>
+		<br>< input> types:
+		<ul>
+			<li> text- una línea de texto</li>
+			<li>radio- botón para opciones múltiples</li>
+			<li>submit- para subir la información</li>
+			<li>button- un botón</li>
+			<li>password</li>
+			<li>reset</li>
+			<li>checkbox</li>
+			<li>range</li>
+			<li>color</li>
+			<li>date</li>
+			<li>number</li>
+			<li>email</li>
+			<li>url</li>
+			</ul>
+		<b>Restricciones de input:</b>
+		<br><br>
+		<img src="Input Restrictions.png"  alt="Restricciones de input" width=500 height =auto></img>
+		<br>
+		<button type="button" onclick="alert('Usar onClick= alert(msg) para hacer una ventana')"> popUp </button>
+				
+		<br>
+		 Fieldset- agrupar la form en un área encerrada con titulo como "caption"
+		 <br>
+		 select:
+		 <select>
+		 	<option value="option"> < option></option>
+		 	<option value="option">  listar opciones</option>
+		 	<option value="option"> size =`x`</option>
+		 	<option value="option"> multiple</option>
+		 </select>
+		 <br>
+		 Textarea:
+		 <br>
+		 <textarea name="ej" rows="10" cols="10">< textarea> sirve para poner cuadros de texto como input. rows=x cols=y </textarea>
+ 		 <br>
+ 		 <input type="submit">
+ 		 <br>
+ 		
+		<br> <b>Sus atributos principales son:</b>
+		<br>
+		<br>
+		<img src="Form.png" alt="atributos de form" width=500 height =auto></img>
+
+</p>
+	<h1 id = "css">Notas CSS </h1>
+	<hr>
+	<b>CSS Box model:</b> todo elemento en HTML se encuentra dentro de este modelo de caja:
+	<img src= "box.png" alt= "Imagen de caja"> </img>
+	<br>
+	<b>Border Styles:</b>
+	<br> <br>
+	<img src="Border.png" alt="Bordes" width= 500 height= auto></img>
+	<br><b>Margin:</b>
+	- establece el espacio afuera de un elemento (top, right, bottom, left)
+	<br>
+	<br><b>Padding:</b>
+	- establece un espacio en el borde dentro de un elemento (top, right, bottom, left)
+	<br>
+	<br>
+	<b>Text edits:</b>
+	<br>
+	<img src="text.png" alt= "modificaciones de texto"></img>
+	<br>
+	<br>
+	<b>Icons- </b> para poner íconos, agregar uno de los siguientes links al head: <br>
+	<ul>
+		<li>&lt link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" &gt</li>
+		<li>&lt link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" &gt</li>
+		<li><i class="fa fa-car"></i></li>
+		<li><i class= "material-icons"> cloud</i></li>
+	</ul>
+	<b>Links.2- </b> los links se pueden configurar para los siguientes estados:
+	<ul>
+		<li> a:link- como se comporta el link a plena vista</li>
+		<li>	a:hover- como se comporta cuando pasa el cursor sobre él</li>
+		<li>	a:visited- como se ve ya que ha sido usado</li>
+		<li>	a:active- en el momento que se presiona</li>
+	</ul>
+	<b>Span- </b>
+	<p>Se puede cambiar la visualización del mouse sobre un elemento utilizando "span "</p>
+		<ul>
+			<li><span style="cursor:auto">auto</span></li>
+			<li><span style="cursor:crosshair">crosshair</span></li>
+			<li><span style="cursor:default">default</span></li>
+			<li><span style="cursor:e-resize">e-resize</span></li>
+			<li><span style="cursor:help">help</span></li>
+			<li><span style="cursor:move">move</span></li>
+			<li><span style="cursor:n-resize">n-resize</span></li>
+			<li><span style="cursor:ne-resize">ne-resize</span></li>
+			<li><span style="cursor:nw-resize">nw-resize</span></li>
+			<li><span style="cursor:pointer">pointer</span></li>
+			<li><span style="cursor:progress">progress</span></li>
+			<li><span style="cursor:s-resize">s-resize</span></li>
+			<li><span style="cursor:se-resize">se-resize</span></li>
+			<li><span style="cursor:sw-resize">sw-resize</span></li>
+			<li><span style="cursor:text">text</span></li>
+			<li><span style="cursor:w-resize">w-resize</span></li>
+			<li><span style="cursor:wait">wait</span></li>
+		</ul>
+		<b>Tablas:</b>
+		<table >
+			<caption>Ejemplo</caption>
+			<tr> 
+				<th> < table> </th>
+				<td> define una tabla</td>
+			</tr>
+			<tr> 
+				<th> < tr> </th>
+				<td> una fila de la tabla</td>
+			</tr>
+			<tr> 
+				<th> < td> </th>
+				<td> datos de una tabla</td>
+			</tr>
+			<tr> 
+				<th> < th> </th>
+				<td> heading de una tabla</td>
+			</tr>
+			<tr> 
+				<th> < caption> </th>
+				<td> titulo de una tabla</td>
+			</tr>
+			<tr>
+				<th> nth-child(even/odd)</th>
+				<td> sirve para dividir las filas en colores</td>
+			</tr>
+		</table>
+	<br>
+	<b>Display</b>- se puede usar display o visibility para mostrar elementos de diferentes modos
+	<ul>
+		<li>display: none</li>
+		<li>visibility: hidden</li>
+	</ul>
+	<br><b>Max-height, max-width-</b> se utiliza para que un elemento no rebace tal tamaño, se ajusta a que cambien de tamaño la ventana. 
+	<br><br><b>Overflow-</b> se encarga de los casos en donde el texto no cabe dentro del tamaño de un elemento.
+	<ul>
+		<li>visible- ignora el tamaño y se sale del elemento</li>
+		<li>hidden- lo corta en donde el tamaño lo permite </li>
+		<li>scroll- agrega scrollbars para no perder el texto</li>
+		<li>auto- scroll solo si es necesario</li>
+		<li>Hay overflow-x y overflow-y, dependiendo de que eje quieres considerar</li>
+	</ul>
+	<br>
+	<b>Clear / float- </b> sirve para organizar imagenes o elementos para que 'floten' juntos
+	<br>
+	<div class="clearfix">
+		<div class= "img-container">
+			<img src="im1.jpg" width="100%">
+		</div>
+		<div class= "img-container">
+			<img src="im2.jpg" width="100%">
+		</div>
+		<div class= "img-container">
+			<img src="im3.jpg" width="100%">
+		</div>
+	</div>
+	<ul>
+		<li>Al terminar debes de poner lo siguiente para regresar al formato normal:
+			<code><br>.clearfix::after {
+    		<br>content: "";
+    		<br>clear: both;
+    		<br>display: table;</code>
+		}</li>
+	</ul>
+	<br><b>Combinators-</b> sirve para seleccionar algunos elementos en específico.
+	<ul>
+		<li>descendant selector (space)- se refiere a los que están dentro del otro elemento</li>
+		<li>child selector (>)- se refiere a los que van justo un nivel adentro de otro elemento, "hijos"</li>
+		<li>adjacent sibling selector (+)- van justo despues de otro elemento</li>
+		<li>general sibling selector (~)- todos los hermanos del otro elemento </li>
+	</ul>
+	<br><b>Pseudo-classes- </b>sirven para darle formato especial a diferentes estados de un elemento (links por ejemplo)
+	<ul>
+		<li><strong>Formato:</strong> <code><br>selector:pseudo-class {<br>
+    	property:value;<br>
+			}</code></li>
+		<li>First-child- puedes ustar esta pseudoclase para seleccionar solo la primera instancia de un elemento</li>
+	</ul>
+	<br><b>Pseudo-elements- </b>similares a la pseudoclase, pero este sirve para darle formato a ciertas partes de un elemento (por ejemplo la primer línea o letra)
+	<ul>	
+		<li>::after</li>
+		<li>::before</li>
+		<li>::first-letter</li>
+		<li>::first-line</li>
+		<li>::selection</li>
+	</ul>
+	<br><b>Navigation bar- </b> hecha a base de links
+	<ul>
+		<li>Vertical- se hace con una lista quitandole sus puntos</li>
+		<li>Horizontal- se hace con un div o con una lista con elementos 'inline'</li>
+		<li>Para hacerla que se quede todo el tiempo, le pones position:fixed, y le determinas un tamaño</li>
+	</ul>
+	<br><b>Attribute selector-</b> sirve para seleccionar solo elementos que contienen algun atributo
+	<ul>
+		<li>se escribe como: elemento[atributte] {}</li>
+		<li>puedes checar que el atributo tenga tal valor, usando [attribute= "value"]</li>
+	</ul>
+	
+
+
+	
+
+	
+	
+
+<br><br><br>
+<footer> Bernardo Altamirano
+<br> ITAM</footer>
+</body>
+</html>
