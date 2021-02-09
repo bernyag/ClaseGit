@@ -1,0 +1,173 @@
+body {
+    background-color: silver;
+}
+
+h1,h2,h3,b {
+	font-family: "Comic Sans MS";
+}
+h1{
+	color: orange;
+    text-align: center;
+    text-shadow: 3px 2px brown;
+    background-color: darkgray;
+    
+}
+.icon2{
+	width:30px;
+	height:30px;
+	opacity: 1;
+	}
+.icon{
+	width:100px;
+	height:100px;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	opacity: 1;
+	}
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 95%;
+  padding-right: 10px;
+  border: solid;
+  border-color: #333;
+  border-radius: 10px;
+  z-index: 999;
+}
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  border-right: solid;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+.navbar a.active{
+	background-color: brown;
+	color: white;
+}
+
+h1.tit{
+	position: fixed;
+    top: 0;
+    te
+}
+p{
+	margin:0; 
+	display: inline;
+}
+li,dd {
+		color: dimgray;
+		background-color: white;
+		padding-left: 5px;
+		display: none;
+}
+dd{
+	max-width:80%;
+
+
+}
+ul{
+	margin-top: 12px;
+	list-style-position: inside;
+	background-color:#ff9999;
+	padding: 10px;
+	max-width: 80%;
+	margin: auto;
+	max-height: 100px;
+	overflow: auto;
+}		
+
+b{
+	color:brown;
+	border-left: 6px solid red;
+	border-radius: 3px;
+    background-color: lightgrey;
+    padding-left: 6px;
+    padding-right: 6px;
+    text-decoration: underline;
+
+}
+ul:hover li{
+	display: list-item;
+}
+table, th,td{
+	border: 1px dotted black;
+}
+tr:nth-child(odd){
+	background-color: aliceblue;
+}
+tr:nth-child(even){
+	background-color: cornsilk;
+}
+tr:hover{
+	background-color: gold;
+}
+caption{
+	font-size: 25px;
+	text-align: center;
+}
+img{
+	align-items: center;
+	width:75%;
+	padding-left: 5px;
+	height: auto;
+	opacity: .7;
+}
+img:hover{
+	opacity: 1;
+}
+a:link{
+	color:white;
+	background-color: black;
+	text-align: center;
+	padding: 2px;
+	display: inline-block;
+}
+a:hover{
+	color:black;
+	background-color: brown;
+	text-align: center;
+	padding: 2px;
+	display: inline-block;
+}
+a:visited{
+	color:black	;
+	background-color: orange ;
+	text-align: center;
+	padding: 2px;
+	display: inline-block;
+}
+a:active{
+	color:black;
+	background-color: green;
+	text-align: center;
+	padding: 2px;
+	display: inline-block;
+}
+.img-container{
+	float: left;
+	width: 30%;
+	padding: 5px;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+footer{
+	position: fixed;
+	bottom: 0;
+	background: green;
+	width: 99%;
+}
